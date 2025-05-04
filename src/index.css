@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Nunito Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure body doesn't exceed viewport */
+  }
+}
+
+/* Optimize transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Improve mobile menu animation */
+.max-h-0 {
+  max-height: 0;
+  transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+}
+
+.max-h-[500px] {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in, opacity 0.3s ease-in;
+}
+
+.zigzag-section:nth-child(even) {
+  @apply flex-row-reverse;
+}
+
+/* Optimize images */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Navbar backdrop styles */
+.navbar-backdrop {
+  @apply bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-lg;
+}
+
+.navbar-transparent {
+  @apply bg-transparent;
+}

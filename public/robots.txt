@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Main pages
+Allow: /home
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+
+# Product pages
+Allow: /products/infrastructure
+Allow: /products/cloud
+Allow: /products/server
+
+# Resource pages
+Allow: /resources/docs
+Allow: /resources/cases
+Allow: /resources/integrate
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://isikcom.com/sitemap.xml
