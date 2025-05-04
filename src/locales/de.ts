@@ -14,9 +14,7 @@ export const de = {
     title: "Über uns",
     overview: "Wir setzen uns für innovative Lösungen ein, die Unternehmen transformieren.",
     stats: [
-      { value: "10+", label: "Jahre Erfahrung" },
-      { value: "500+", label: "Zufriedene Kunden" },
-      { value: "99%", label: "Kundenzufriedenheit" },
+      { value: "10+", label: "Zufriedene Kunden" },
       { value: "24/7", label: "Support" }
     ],
     mission: {
@@ -31,19 +29,9 @@ export const de = {
       title: "Unser Team",
       members: [
         {
-          name: "John Smith",
-          position: "CEO",
-          description: "Visionärer Führungskraft mit über 15 Jahren Branchenerfahrung."
-        },
-        {
-          name: "Sarah Johnson",
-          position: "CTO",
-          description: "Technische Expertin, die Innovation und Wachstum vorantreibt."
-        },
-        {
-          name: "Michael Brown",
-          position: "Leiter Operations",
-          description: "Operations-Spezialist für reibungslose Abläufe."
+          name: "Mohammed Ali Isik",
+          position: "Inhaber",
+          description: ""
         }
       ]
     },
