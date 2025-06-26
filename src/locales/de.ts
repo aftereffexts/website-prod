@@ -106,6 +106,41 @@ export const de = {
     address: 'Adresse',
     phone: 'Telefon'
   },
+  privacy: {
+    title: 'Datenschutzerklärung & Impressum',
+    impressum: {
+      title: 'Impressum',
+      content: {
+        company: 'ISIKCOM',
+        owner: 'Mohammed Ali Isik',
+        address: 'Geschäftsadresse',
+        phone: 'Telefonnummer',
+        email: 'E-Mail-Adresse',
+        vatId: 'Umsatzsteuer-ID (falls zutreffend)',
+        responsible: 'Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV'
+      }
+    },
+    general: {
+      title: 'Allgemeine Informationen',
+      content: 'Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten sammeln, verwenden und schützen, wenn Sie unsere Dienste nutzen.'
+    },
+    contact: {
+      title: 'Kontaktinformationen',
+      content: 'Bei Fragen zu dieser Datenschutzerklärung wenden Sie sich bitte an uns unter den oben im Impressum angegebenen Kontaktdaten.'
+    },
+    registration: {
+      title: 'Registrierung und Datenerfassung',
+      content: 'Wir sammeln personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wenn Sie sich für unsere Dienste registrieren oder uns kontaktieren.'
+    },
+    liability: {
+      title: 'Haftungsausschluss',
+      content: 'Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.'
+    },
+    copyright: {
+      title: 'Urheberrecht',
+      content: 'Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.'
+    }
+  },
   footer: {
     description: 'Wir stärken Unternehmen mit IT-Infrastruktur und Managed Services der nächsten Generation.',
     quickLinks: 'Schnellzugriff',

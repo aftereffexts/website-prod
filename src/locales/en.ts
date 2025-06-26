@@ -106,6 +106,41 @@ export const en = {
     address: 'Address',
     phone: 'Phone'
   },
+  privacy: {
+    title: 'Privacy Policy & Legal Notice',
+    impressum: {
+      title: 'Legal Notice (Impressum)',
+      content: {
+        company: 'ISIKCOM',
+        owner: 'Mohammed Ali Isik',
+        address: 'Business Address',
+        phone: 'Phone Number',
+        email: 'Email Address',
+        vatId: 'VAT ID (if applicable)',
+        responsible: 'Responsible for content according to § 55 Abs. 2 RStV'
+      }
+    },
+    general: {
+      title: 'General Information',
+      content: 'This privacy policy explains how we collect, use, and protect your personal information when you use our services.'
+    },
+    contact: {
+      title: 'Contact Information',
+      content: 'For questions regarding this privacy policy, please contact us using the information provided in the legal notice above.'
+    },
+    registration: {
+      title: 'Registration and Data Collection',
+      content: 'We collect personal information that you voluntarily provide to us when registering for our services or contacting us.'
+    },
+    liability: {
+      title: 'Liability Disclaimer',
+      content: 'The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents\' accuracy, completeness, or topicality.'
+    },
+    copyright: {
+      title: 'Copyright',
+      content: 'The content and works on these pages created by the site operators are subject to German copyright law.'
+    }
+  },
   footer: {
     description: 'Empowering businesses with next-generation IT infrastructure and managed services.',
     quickLinks: 'Quick Links',
