@@ -14,57 +14,61 @@ function Privacy({ t }) {
               
               {/* General Information */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.general.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.general.title}</h3>
                 <p className="mb-2 dark:text-gray-300">
-                  <strong>{t.privacy.impressum.general.website}:</strong>{' '}
+                  <strong>Website:</strong>{' '}
                   <a href="https://isikcom.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark">
                     https://isikcom.com
                   </a>
                 </p>
                 <p className="mb-4 dark:text-gray-300">
-                  <strong>{t.privacy.impressum.general.provider}:</strong> Mohammed Ali Isik Einzelunternehmen
+                  <strong>Provider:</strong> {t.privacy.impressum.content.company}
                 </p>
               </div>
 
               {/* Contact Information */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.contact.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.impressum.contact.address}</p>
-                <p className="mb-4 dark:text-gray-300">{t.privacy.impressum.contact.city}</p>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.contact.title}</h3>
+                <p className="dark:text-gray-300">{t.privacy.impressum.content.address}</p>
+                <p className="mb-4 dark:text-gray-300">Germany</p>
                 <p className="mb-2 dark:text-gray-300">
-                  <strong>{t.privacy.impressum.contact.phone}:</strong>{' '}
-                  <a href="tel:4915792619115" className="text-primary hover:text-primary-dark">+49 1579 2619115</a>
+                  <strong>Phone:</strong>{' '}
+                  <a href={`tel:${t.privacy.impressum.content.phone}`} className="text-primary hover:text-primary-dark">
+                    {t.privacy.impressum.content.phone}
+                  </a>
                 </p>
                 <p className="dark:text-gray-300">
-                  <strong>{t.privacy.impressum.contact.email}:</strong>{' '}
-                  <a href="mailto:privacy@isikcom.com" className="text-primary hover:text-primary-dark">privacy@isikcom.com</a>
+                  <strong>Email:</strong>{' '}
+                  <a href={`mailto:${t.privacy.impressum.content.email}`} className="text-primary hover:text-primary-dark">
+                    {t.privacy.impressum.content.email}
+                  </a>
                 </p>
               </div>
 
               {/* Registration Information */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.registration.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.registration.title}</h3>
                 <p className="dark:text-gray-300">
-                  <strong>{t.privacy.impressum.registration.vatId}:</strong> folgt
+                  <strong>VAT ID:</strong> {t.privacy.impressum.content.vatId}
                 </p>
               </div>
 
               {/* Liability for Links */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.liability.links.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.impressum.liability.links.content}</p>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.liability.title}</h3>
+                <p className="dark:text-gray-300">{t.privacy.liability.content}</p>
               </div>
 
               {/* Liability for Content */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.liability.content.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.impressum.liability.content.content}</p>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">Content Liability</h3>
+                <p className="dark:text-gray-300">{t.privacy.liability.content}</p>
               </div>
 
               {/* Copyright */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.impressum.copyright.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.impressum.copyright.content}</p>
+                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.copyright.title}</h3>
+                <p className="dark:text-gray-300">{t.privacy.copyright.content}</p>
               </div>
             </section>
           </div>
