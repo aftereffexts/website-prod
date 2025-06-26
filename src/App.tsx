@@ -280,13 +280,14 @@ function Navbar({ darkMode, setDarkMode, t }: NavbarProps) {
               onClick={() => handleDropdownClick('products')}
               t={t}
             />
-            <DropdownMenu
+            {/* Resources dropdown is commented out to deactivate it */}
+            {/* <DropdownMenu
               title="Resources"
               items={resourceItems}
               isOpen={activeDropdown === 'resources'}
               onClick={() => handleDropdownClick('resources')}
               t={t}
-            />
+            /> */}
             <Link 
               to="/about" 
               className={`py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ${
@@ -355,7 +356,8 @@ function Navbar({ darkMode, setDarkMode, t }: NavbarProps) {
                 </Link>
               ))}
             </div>
-            <div className="border-b dark:border-gray-700 pb-4">
+            {/* Resources section is commented out to deactivate it */}
+            {/* <div className="border-b dark:border-gray-700 pb-4">
               <div className="font-medium mb-2 dark:text-white">Resources</div>
               {resourceItems.map((item, index) => (
                 <Link
@@ -368,7 +370,7 @@ function Navbar({ darkMode, setDarkMode, t }: NavbarProps) {
                   <span>{item.title}</span>
                 </Link>
               ))}
-            </div>
+            </div> */}
             <Link 
               to="/about" 
               className="block px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
