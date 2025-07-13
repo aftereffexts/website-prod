@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Main pages
+# Explicitly allow main pages
 Allow: /home
 Allow: /about
 Allow: /contact
@@ -9,18 +9,27 @@ Allow: /privacy
 Allow: /terms
 Allow: /cookies
 
-# Product pages
+# Allow product pages
 Allow: /products/infrastructure
 Allow: /products/cloud
 Allow: /products/server
 
-# Resource pages
-Allow: /resources/docs
-Allow: /resources/cases
-Allow: /resources/integrate
+# Allow static assets
+Allow: /assets/
+Allow: /images/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.woff
+Allow: /*.woff2
 
-# Crawl-delay
-Crawl-delay: 10
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
 
-# Sitemap
-Sitemap: https://isikcom.com/sitemap.xml
+# Sitemap location
+Sitemap: https://incomparable-beijinho-3a3f44.netlify.app/sitemap.xml
