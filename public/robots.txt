@@ -32,4 +32,4 @@ Allow: /*.woff2
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://incomparable-beijinho-3a3f44.netlify.app/sitemap.xml
+Sitemap: https://isikcom.com/sitemap.xml
