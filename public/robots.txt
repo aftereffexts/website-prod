@@ -28,7 +28,12 @@ Allow: /*.ico
 Allow: /*.woff
 Allow: /*.woff2
 
-# Crawl-delay for respectful crawling
+# Disallow admin or sensitive areas (if any exist in future)
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+
+# Crawl-delay for respectful crawling (reduced for faster indexing)
 Crawl-delay: 1
 
 # Sitemap location

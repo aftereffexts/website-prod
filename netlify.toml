@@ -2,20 +2,27 @@
   publish = "dist"
   command = "npm run build"
 
+# Redirect www to non-www (301 permanent redirect)
+[[redirects]]
+  from = "https://www.isikcom.com/*"
+  to = "https://isikcom.com/:splat"
+  status = 301
+  force = true
+
+# SPA fallback for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Remove restrictive headers that block crawlers
+# Crawler-friendly headers - removed restrictive policies
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    # Removed X-XSS-Protection as it's deprecated
-    # Relaxed CSP to allow crawlers
+    # Relaxed CSP to allow crawlers and external resources
     Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-ancestors 'self';"
 
 # Specific headers for robots.txt to ensure it's accessible
@@ -24,6 +31,8 @@
   [headers.values]
     Content-Type = "text/plain"
     Cache-Control = "public, max-age=86400"
+    # Ensure no restrictions for robots.txt
+    X-Robots-Tag = "noindex, nofollow"
 
 # Specific headers for sitemap.xml
 [[headers]]
@@ -38,23 +47,33 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 
-# Ensure proper headers for main pages
+# Ensure proper headers for main pages with crawler-friendly settings
 [[headers]]
   for = "/home"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"
 
 [[headers]]
   for = "/about"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"
 
 [[headers]]
   for = "/contact"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"
 
 [[headers]]
   for = "/privacy"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"
+
+[[headers]]
+  for = "/products/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"

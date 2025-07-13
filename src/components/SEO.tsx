@@ -13,19 +13,19 @@ const SEO: React.FC<SEOProps> = ({
   title = 'ISIKCOM - IT Infrastructure & Cloud Services',
   description = 'Enterprise-grade IT infrastructure, cloud services, and managed solutions for businesses. 24/7 technical support and cybersecurity services.',
   type = 'website',
-  image = 'https://incomparable-beijinho-3a3f44.netlify.app/og-image.jpg',
+  image = 'https://isikcom.com/og-image.jpg',
   keywords = 'IT infrastructure, cloud services, managed services, cybersecurity, server management, network solutions, Fortinet, Cloudflare, Microsoft Entra'
 }) => {
   const location = useLocation();
-  const canonicalUrl = `https://incomparable-beijinho-3a3f44.netlify.app${location.pathname}`;
+  const canonicalUrl = `https://isikcom.com${location.pathname}`;
 
   // JSON-LD structured data for Organization
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'ISIKCOM',
-    url: 'https://incomparable-beijinho-3a3f44.netlify.app',
-    logo: 'https://incomparable-beijinho-3a3f44.netlify.app/logo.png',
+    url: 'https://isikcom.com',
+    logo: 'https://isikcom.com/logo.png',
     description: description,
     foundingDate: '2024',
     contactPoint: {
@@ -53,7 +53,7 @@ const SEO: React.FC<SEOProps> = ({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'ISIKCOM',
-    url: 'https://incomparable-beijinho-3a3f44.netlify.app',
+    url: 'https://isikcom.com',
     description: description,
     publisher: {
       '@type': 'Organization',
@@ -61,7 +61,7 @@ const SEO: React.FC<SEOProps> = ({
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://incomparable-beijinho-3a3f44.netlify.app/search?q={search_term_string}',
+      target: 'https://isikcom.com/search?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -90,7 +90,7 @@ const SEO: React.FC<SEOProps> = ({
       '@type': 'ListItem',
       position: index + 2,
       name: path.charAt(0).toUpperCase() + path.slice(1).replace('-', ' '),
-      item: `https://incomparable-beijinho-3a3f44.netlify.app/${array.slice(0, index + 1).join('/')}`
+      item: `https://isikcom.com/${array.slice(0, index + 1).join('/')}`
     }))
   };
 
@@ -100,7 +100,7 @@ const SEO: React.FC<SEOProps> = ({
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: 'https://incomparable-beijinho-3a3f44.netlify.app'
+      item: 'https://isikcom.com'
     });
   }
 
