@@ -5,72 +5,50 @@ function Privacy({ t }) {
     <div className="min-h-screen pt-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8 dark:text-white">{t.privacy.title}</h1>
-          
           <div className="prose dark:prose-invert max-w-none">
-            {/* Impressum Section */}
-            <section className="mb-12 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-bold mb-6 dark:text-white">{t.privacy.impressum.title}</h2>
+            {/* German Impressum Content */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <h1 className="text-4xl font-bold mb-8 dark:text-white">Impressum</h1>
               
-              {/* General Information */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.general.title}</h3>
-                <p className="mb-2 dark:text-gray-300">
-                  <strong>Website:</strong>{' '}
-                  <a href="https://isikcom.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark">
-                    https://isikcom.com
-                  </a>
+              <div className="space-y-6 text-gray-600 dark:text-gray-300">
+                <p>Angaben gemäß § 5 DDG</p>
+                
+                <p>
+                  Isikcom<br />
+                  <br />
+                  Hermann-Hesse-Str. 30<br />
+                  71642 Ludwigsburg <br />
                 </p>
-                <p className="mb-4 dark:text-gray-300">
-                  <strong>Provider:</strong> {t.privacy.impressum.content.company}
+                
+                <p>
+                  <strong>Vertreten durch: </strong><br />
+                  Mohammed Ali Abraham Isik<br />
                 </p>
-              </div>
-
-              {/* Contact Information */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.contact.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.impressum.content.address}</p>
-                <p className="mb-4 dark:text-gray-300">Germany</p>
-                <p className="mb-2 dark:text-gray-300">
-                  <strong>Phone:</strong>{' '}
-                  <a href={`tel:${t.privacy.impressum.content.phone}`} className="text-primary hover:text-primary-dark">
-                    {t.privacy.impressum.content.phone}
-                  </a>
+                
+                <p>
+                  <strong>Kontakt:</strong> <br />
+                  Telefon: 0157-92619115<br />
+                  E-Mail: <a href='mailto:m.isik@isikcom.com' className="text-primary hover:text-primary-dark">m.isik@isikcom.com</a><br />
                 </p>
-                <p className="dark:text-gray-300">
-                  <strong>Email:</strong>{' '}
-                  <a href={`mailto:${t.privacy.impressum.content.email}`} className="text-primary hover:text-primary-dark">
-                    {t.privacy.impressum.content.email}
-                  </a>
-                </p>
-              </div>
-
-              {/* Registration Information */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.registration.title}</h3>
-                <p className="dark:text-gray-300">
-                  <strong>VAT ID:</strong> {t.privacy.impressum.content.vatId}
+                
+                <p>
+                  <strong>Haftungsausschluss: </strong><br /><br />
+                  <strong>Haftung für Inhalte</strong><br /><br />
+                  Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br /><br />
+                  <strong>Haftung für Links</strong><br /><br />
+                  Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br /><br />
+                  <strong>Datenschutz</strong><br /><br />
+                  Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br />
+                  Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br />
+                  Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br />
+                  <br /><br />
+                  <strong>Google Analytics</strong><br /><br />
+                  Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.<br /><br />
+                  <strong>Google AdSense</strong><br /><br />
+                  Diese Website benutzt Google Adsense, einen Webanzeigendienst der Google Inc., USA (''Google''). Google Adsense verwendet sog. ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons'' (kleine unsichtbare Grafiken) zur Sammlung von Informationen. Durch die Verwendung des Web Beacons können einfache Aktionen wie der Besucherverkehr auf der Webseite aufgezeichnet und gesammelt werden. Die durch den Cookie und/oder Web Beacon erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) werden an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website im Hinblick auf die Anzeigen auszuwerten, um Reports über die Websiteaktivitäten und Anzeigen für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Das Speichern von Cookies auf Ihrer Festplatte und die Anzeige von Web Beacons können Sie verhindern, indem Sie in Ihren Browser-Einstellungen ''keine Cookies akzeptieren'' wählen (Im MS Internet-Explorer unter ''Extras > Internetoptionen > Datenschutz > Einstellung''; im Firefox unter ''Extras > Einstellungen > Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
                 </p>
               </div>
-
-              {/* Liability for Links */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.liability.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.liability.content}</p>
-              </div>
-
-              {/* Liability for Content */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">Content Liability</h3>
-                <p className="dark:text-gray-300">{t.privacy.liability.content}</p>
-              </div>
-
-              {/* Copyright */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4 dark:text-white">{t.privacy.copyright.title}</h3>
-                <p className="dark:text-gray-300">{t.privacy.copyright.content}</p>
-              </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>
