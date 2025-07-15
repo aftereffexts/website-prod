@@ -13,7 +13,7 @@ const SEO: React.FC<SEOProps> = ({
   title = 'ISIKCOM - IT Infrastructure & Cloud Services',
   description = 'Enterprise-grade IT infrastructure, cloud services, and managed solutions for businesses. 24/7 technical support and cybersecurity services.',
   type = 'website',
-  image = 'https://isikcom.com/og-image.jpg',
+  image = 'https://isikcom.com/content/logo/favicon.ico',
   keywords = 'IT infrastructure, it dienstleister, it service ludwigsburg, it beratung ludwigsburg, dienstleister stuttgart, cloud ludwigsburg, it ludwigsburg, it stuttgart, systemhaus stuttgart, systemhaus ludwigsburg, it service, baden-wuerttemberg, it waiblingen, it esslingen, netzwerk ludwigsburg, it security ludwigsburg  it cloud services, managed services, cybersecurity, server management, network solutions, Fortinet stuttgart, Cloudflare'
 }) => {
   const location = useLocation();
@@ -25,7 +25,7 @@ const SEO: React.FC<SEOProps> = ({
     '@type': 'Organization',
     name: 'ISIKCOM',
     url: 'https://isikcom.com',
-    logo: 'https://isikcom.com/logo.png',
+    logo: 'https://isikcom.com/content/logo/favicon.ico',
     description: description,
     foundingDate: '2024',
     contactPoint: {
